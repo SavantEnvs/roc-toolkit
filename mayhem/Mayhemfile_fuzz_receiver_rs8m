@@ -1,0 +1,9 @@
+project: savantenvs/roc-toolkit
+target: fuzz_receiver_rs8m
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_receiver_rs8m/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_receiver_rs8m
+    libfuzzer: true
+    timeout: 10

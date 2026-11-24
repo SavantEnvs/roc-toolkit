@@ -1,0 +1,7 @@
+# Build context for mayhem/Dockerfile: the FULL repo incl. .git, minus local build outputs.
+/bin/
+/build/
+/mayhem/out/
+.sconf_temp/
+.sconsign*.dblite
+config.log

@@ -1,0 +1,9 @@
+project: savantenvs/roc-toolkit
+target: fuzz_receiver_ldpc
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_receiver_ldpc/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_receiver_ldpc
+    libfuzzer: true
+    timeout: 10
